@@ -1,6 +1,6 @@
 // /api/send-otp  — sends a 6-digit OTP via WhatsApp (CallMeBot) AND SMS (Fast2SMS)
 // Both are free for India. No OTP is stored server-side — the client holds it (demo-grade security).
-import { sendWhatsApp, sendSMS } from "../../SubTrack-Prototype/lib/core.js";
+import { sendWhatsApp, sendSMS } from "../lib/core.js";
 
 export default async function handler(req, res) {
   if (req.method !== "POST")

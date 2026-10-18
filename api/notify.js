@@ -1,4 +1,4 @@
-import { sendWhatsApp, sendSMS } from "../../SubTrack-Prototype/lib/core.js";
+import { sendWhatsApp, sendSMS } from "../lib/core.js";
 export default async function handler(req, res) {
   if (req.method !== "POST")
     return res.status(405).json({ ok: false, error: "POST only" });

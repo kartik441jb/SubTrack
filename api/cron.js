@@ -1,4 +1,4 @@
-import { runReminders } from "../../SubTrack-Prototype/lib/core.js";
+import { runReminders } from "../lib/core.js";
 // Called daily by Vercel Cron (see vercel.json). Vercel sends "Authorization: Bearer $CRON_SECRET".
 export default async function handler(req, res) {
   if (
